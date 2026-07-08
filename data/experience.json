@@ -1,0 +1,58 @@
+[
+  {
+    "role": "Manager, Data Services",
+    "company": "Databricks India",
+    "startDate": "2022-06",
+    "endDate": "Present",
+    "highlights": [
+      "Lead the design and delivery of enterprise-scale, multi-agent AI frameworks, including for one of Europe's largest electrical organizations, driving measurable improvements in efficiency, accuracy, and time-to-value.",
+      "Architect agentic recruiting automation platforms built on Delta Lake and modern Data Intelligence architectures.",
+      "Build, mentor, and lead high-performing Data & AI teams delivering business-critical outcomes for global enterprise customers.",
+      "Partner with customers on Data + AI transformation strategy, accelerating adoption of the Databricks Data Intelligence Platform."
+    ]
+  },
+  {
+    "role": "Senior Program Manager, Data & Cloud Engineering",
+    "company": "[Global Technology Consulting Firm]",
+    "startDate": "2018-04",
+    "endDate": "2022-05",
+    "highlights": [
+      "Directed large-scale cloud data engineering programs across AWS and Azure for enterprise clients.",
+      "Established DevOps and CI/CD practices that reduced release cycle time by [XX]%.",
+      "Led cross-functional teams delivering data platform modernization for [N] enterprise customers."
+    ]
+  },
+  {
+    "role": "Data Solutions Architect",
+    "company": "[Enterprise Software & Cloud Solutions Company]",
+    "startDate": "2013-01",
+    "endDate": "2018-03",
+    "highlights": [
+      "Architected enterprise data warehousing and business intelligence solutions supporting executive decision-making.",
+      "Designed data models and ETL pipelines processing large-scale operational datasets.",
+      "Introduced self-service analytics using Tableau and PowerBI, increasing report turnaround speed by [XX]%."
+    ]
+  },
+  {
+    "role": "Business Intelligence & Data Warehousing Lead",
+    "company": "[Financial Services Company]",
+    "startDate": "2006-06",
+    "endDate": "2012-12",
+    "highlights": [
+      "Led the BI and data warehousing function, delivering reporting and analytics for finance and operations teams.",
+      "Managed a team of developers and analysts building Oracle-based data warehouse solutions.",
+      "Standardized data modelling practices, improving data quality and consistency across reporting systems."
+    ]
+  },
+  {
+    "role": "Software Engineer → Senior Developer, Data Systems",
+    "company": "[IT Services Company]",
+    "startDate": "1999-07",
+    "endDate": "2006-05",
+    "highlights": [
+      "Progressed from Software Engineer to Senior Developer building Oracle database and web applications.",
+      "Delivered application development projects for [N] clients across multiple industries.",
+      "Built foundational expertise in database development, application design, and project delivery."
+    ]
+  }
+]

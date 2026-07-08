@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Cards — projects, certifications, achievements, blog
+   ========================================================================== */
+
+.card {
+  background: var(--color-bg);
+  border: 1.5px solid rgba(var(--color-primary-rgb), 0.18);
+  border-radius: var(--radius);
+  box-shadow: none;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(var(--color-primary-rgb), 0.4);
+  box-shadow: var(--shadow-sm);
+}
+
+.fetch-error {
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: var(--space-md);
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-md);
+}
+
+.project-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 340 / 191;
+  object-fit: cover;
+}
+
+.project-body {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1;
+}
+
+.project-title {
+  font-size: 1.15rem;
+}
+
+.project-description {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  flex: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+}
+
+.project-tags li {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background-color: var(--color-bg-alt);
+  color: var(--color-primary);
+}
+
+.project-links {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+}
+
+/* Certifications */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+}
+
+.cert-badge {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+}
+
+.cert-details h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.cert-issuer {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.cert-date {
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+/* Achievements */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+}
+
+.achievement-card {
+  padding: var(--space-md);
+}
+
+.achievement-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+}
+
+.achievement-date,
+.blog-date {
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.achievement-description,
+.blog-excerpt {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+/* Blog */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.blog-card {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.blog-title {
+  font-size: 1.05rem;
+}
+
+.blog-link {
+  margin-top: 0.4rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "[Building Multi-Agent AI Frameworks for the Enterprise]",
+    "date": "[2025-02]",
+    "excerpt": "[Lessons learned architecting and delivering multi-agent AI systems at enterprise scale, from design patterns to production readiness.]",
+    "url": "[https://example.com/blog/multi-agent-ai]"
+  },
+  {
+    "title": "[Modern Data Intelligence: Delta Lake and Beyond]",
+    "date": "[2024-10]",
+    "excerpt": "[A practitioner's view on how Delta Lake and Data Intelligence architectures are reshaping enterprise data platforms.]",
+    "url": "[https://example.com/blog/data-intelligence]"
+  },
+  {
+    "title": "[Leading Data & AI Teams Through Transformation]",
+    "date": "[2024-05]",
+    "excerpt": "[Reflections on building and mentoring high-performing Data & AI teams while navigating large-scale transformation programs.]",
+    "url": "[https://example.com/blog/leading-data-ai-teams]"
+  }
+]

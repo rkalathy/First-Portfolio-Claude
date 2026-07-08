@@ -1,0 +1,174 @@
+/* ==========================================================================
+   Media Queries — responsive overrides (desktop-first breakpoints)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  /* Tablet overrides */
+
+  /* Navigation */
+  .nav-toggle {
+    display: flex;
+  }
+
+  .site-header nav[aria-label="Primary"] {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .site-header nav[aria-label="Primary"].is-open {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .nav-list a {
+    padding: var(--space-xs) 0;
+    border-bottom: none;
+  }
+
+  /* About */
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 260px;
+    margin-inline: auto;
+  }
+
+  .about-details {
+    margin-inline: auto;
+  }
+
+  .about-cta,
+  .about-socials {
+    justify-content: center;
+  }
+
+  /* Skills */
+  .skills-groups {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  /* Footer */
+  .footer-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-brand p {
+    margin-inline: auto;
+  }
+
+  .footer-links {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Mobile overrides */
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding-block: var(--space-lg);
+  }
+
+  .hero-content {
+    max-width: none;
+  }
+
+  .hero-tagline {
+    margin-inline: auto;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  /* About */
+  .about-cta {
+    flex-direction: column;
+  }
+
+  .about-cta .btn {
+    width: 100%;
+  }
+
+  /* Experience */
+  .experience-cta {
+    flex-direction: column;
+  }
+
+  .experience-cta .btn {
+    width: 100%;
+  }
+
+  .timeline {
+    padding-left: var(--space-md);
+  }
+
+  .timeline-marker {
+    left: calc(-1 * var(--space-md) - 6px);
+  }
+
+  /* Skills */
+  .skills-cta {
+    flex-direction: column;
+  }
+
+  .skills-cta .btn {
+    width: 100%;
+  }
+
+  /* Certifications */
+  .cert-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Projects */
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-links .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav-logo {
+    font-size: 1.05rem;
+    white-space: nowrap;
+  }
+
+  .header-inner {
+    padding-block: var(--space-xs);
+  }
+}

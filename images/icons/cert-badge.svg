@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" role="img" aria-label="Certification badge">
+  <circle cx="28" cy="24" r="16" fill="#2e86de" />
+  <circle cx="28" cy="24" r="11" fill="#1a4d8f" />
+  <path d="M28 17.5l2.2 4.6 5 .7-3.6 3.6.9 5-4.5-2.4-4.5 2.4.9-5-3.6-3.6 5-.7z" fill="#ffffff" />
+  <path d="M20 33l-4 14 8-4 4 6 5-15z" fill="#1a4d8f" />
+  <path d="M36 33l4 14-8-4-4 6-5-15z" fill="#2e86de" />
+</svg>
