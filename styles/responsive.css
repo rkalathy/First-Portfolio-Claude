@@ -1,5 +1,6 @@
 /* ==========================================================================
    Media Queries — responsive overrides (desktop-first breakpoints)
+   Populated as each section is built out.
    ========================================================================== */
 
 @media (max-width: 1024px) {
@@ -74,7 +75,6 @@
 
   .footer-links {
     justify-content: center;
-    align-items: center;
   }
 
   .footer-socials {
@@ -159,16 +159,5 @@
 
   .project-links .btn {
     width: 100%;
-  }
-}
-
-@media (max-width: 420px) {
-  .nav-logo {
-    font-size: 1.05rem;
-    white-space: nowrap;
-  }
-
-  .header-inner {
-    padding-block: var(--space-xs);
   }
 }

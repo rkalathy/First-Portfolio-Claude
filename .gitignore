@@ -1,4 +1,6 @@
 .DS_Store
 Thumbs.db
+
+# Scratch/draft content — not meant to be published
 temp/*
 !temp/.gitkeep

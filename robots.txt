@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rkalathy.github.io/First-Portfolio-Claude/sitemap.xml

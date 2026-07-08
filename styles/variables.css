@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Variables — design tokens (colors, spacing, typography, shadows)
+   Dark mode is defined here but not yet activated (no toggle wired up).
+   ========================================================================== */
+
+:root {
+  /* Colors — professional blue / white / gray */
+  --color-primary: #1a4d8f;
+  --color-primary-dark: #123a6e;
+  --color-primary-light: #3a6fb5;
+  --color-accent: #2e86de;
+
+  --color-bg: #ffffff;
+  --color-bg-alt: #f5f7fa;
+  --color-surface: #ffffff;
+
+  --color-text: #1c1f24;
+  --color-text-muted: #5a6270;
+  --color-border: #e1e5eb;
+
+  --color-success: #2e7d4f;
+  --color-danger: #c0392b;
+
+  /* Typography */
+  --font-primary: "Inter", "Poppins", "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-size-base: 1rem;
+  --line-height-base: 1.6;
+
+  /* Spacing scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+
+  /* Layout */
+  --container-max-width: 1140px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+}
+
+/* Dark mode tokens — ready to enable later via [data-theme="dark"] on <html> */
+[data-theme="dark"] {
+  --color-bg: #101418;
+  --color-bg-alt: #181d23;
+  --color-surface: #1b2128;
+
+  --color-text: #e8eaed;
+  --color-text-muted: #9aa3af;
+  --color-border: #2a313a;
+
+  --color-primary: #4c8bd9;
+  --color-primary-light: #6ea3e0;
+}

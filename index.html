@@ -1,284 +1,498 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ramesh Kalathy — Data & AI Leadership Portfolio</title>
-  <meta name="description" content="Ramesh Kalathy — Data & AI leader with 25+ years of experience in cloud, AI, and technology leadership." />
+
+  <title>Ramesh Kalathy — Manager Data Services</title>
+  <meta name="description" content="Ramesh Kalathy — professional portfolio showcasing experience, projects, technical expertise, leadership, and certifications." />
+  <link rel="canonical" href="https://rkalathy.github.io/First-Portfolio-Claude/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ramesh Kalathy — Manager Data Services" />
+  <meta property="og:description" content="Professional portfolio showcasing experience, projects, technical expertise, leadership, and certifications." />
+  <meta property="og:image" content="images/profile/og-image.jpg" />
+  <meta property="og:url" content="https://rkalathy.github.io/First-Portfolio-Claude/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles (cascade order matters) -->
+  <link rel="stylesheet" href="styles/variables.css" />
   <link rel="stylesheet" href="styles/base.css" />
   <link rel="stylesheet" href="styles/layout.css" />
-  <link rel="stylesheet" href="styles/cards.css" />
+  <link rel="stylesheet" href="styles/navigation.css" />
+  <link rel="stylesheet" href="styles/hero.css" />
+  <link rel="stylesheet" href="styles/about.css" />
   <link rel="stylesheet" href="styles/summary.css" />
+  <link rel="stylesheet" href="styles/skills.css" />
+  <link rel="stylesheet" href="styles/cards.css" />
+  <link rel="stylesheet" href="styles/experience.css" />
+  <link rel="stylesheet" href="styles/buttons.css" />
   <link rel="stylesheet" href="styles/contact.css" />
   <link rel="stylesheet" href="styles/footer.css" />
   <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header class="site-header">
+  <header id="site-header" class="site-header">
     <div class="container header-inner">
-      <a class="nav-logo" href="#top">Ramesh Kalathy</a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <a href="#hero" class="logo">Ramesh Kalathy</a>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
       </button>
+
       <nav aria-label="Primary">
-        <ul class="nav-list">
+        <ul class="nav-list" id="primary-navigation">
+          <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#technical-skills">Technical Skills</a></li>
+          <li><a href="#ai-skills">AI Skills</a></li>
+          <li><a href="#leadership-skills">Leadership</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#blog">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="main">
-    <!-- Hero -->
-    <section id="top" class="hero">
-      <div class="container hero-content">
-        <p class="hero-eyebrow">Data &amp; AI Leader</p>
-        <h1 class="hero-title">Hi, I'm <span>Ramesh Kalathy</span></h1>
-        <p class="hero-tagline">
-          I help enterprises accelerate innovation through Data + AI transformation — with 25+ years of experience
-          spanning cloud architecture, data engineering, and multi-agent AI delivery.
-        </p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+  <main id="main-content">
+    <section id="hero" class="section hero" aria-label="Hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Hello, I'm</p>
+          <h1 class="hero-name">Ramesh Kalathy</h1>
+          <p class="hero-title">Manager Data Services</p>
+          <p class="hero-tagline">
+            [One or two sentence professional tagline summarizing your experience,
+            specialty, and the value you bring.]
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="resume/resume.pdf" class="btn btn-outline" download>Download Resume</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+
+          <ul class="hero-socials" aria-label="Social media links">
+            <li>
+              <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.02 2 2 0 0 1 4 .02zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:you@example.com" aria-label="Send an email">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 5.8 7.8-5.8H4.2zM20 7.4l-7.4 5.5a1 1 0 0 1-1.2 0L4 7.4V18h16V7.4z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="hero-socials">
-          <li><a href="[https://www.linkedin.com/in/ramesh-kalathy]" target="_blank" rel="noopener" aria-label="LinkedIn">in</a></li>
-          <li><a href="[https://github.com/rkalathy]" target="_blank" rel="noopener" aria-label="GitHub">gh</a></li>
-        </ul>
+      </div>
+
+      <a href="#about" class="hero-scroll-indicator" aria-label="Scroll to About section">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M12 16.5a1 1 0 0 1-.71-.29l-6-6a1 1 0 1 1 1.42-1.42L12 14.09l5.29-5.3a1 1 0 0 1 1.42 1.42l-6 6a1 1 0 0 1-.71.29z"/>
+        </svg>
+      </a>
+    </section>
+
+    <section id="about" class="section about" aria-label="About Me">
+      <div class="container about-container">
+        <div class="about-image">
+          <img
+            src="images/profile/profile.svg"
+            alt="Portrait of Ramesh Kalathy"
+            width="340"
+            height="340"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="about-content">
+          <p class="about-eyebrow">About Me</p>
+          <h2 class="section-title">Get to Know Me</h2>
+          <p class="about-intro">
+            Technical professional with an extensive portfolio of software and developed
+            application products. Proven enterprise experience executing cross-functional
+            programs, BI solutions, data analytics, data storage, cloud architecting, and
+            infrastructure development and maintenance. Proficient at analyzing and
+            creating process and data flows using MS Visio.
+          </p>
+          <p class="about-details">
+            Skilled in global team leadership and operations management, I'm a motivated
+            problem solver with an aptitude for innovation and solutions development —
+            committed to ensuring quality product releases within assigned budgets,
+            timeframes, and resources. I manage complex prioritization across functional
+            leaders, effectively steward infrastructure and technology cost investment,
+            and drive structured project execution across tracks for seamless launches,
+            all through a business-first approach grounded in data-driven decision making.
+          </p>
+
+          <div class="about-cta">
+            <a href="resume/resume.pdf" class="btn btn-primary" download>Download Resume</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+
+          <ul class="about-socials" aria-label="Social media links">
+            <li>
+              <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.02 2 2 0 0 1 4 .02zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:you@example.com" aria-label="Send an email">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 5.8 7.8-5.8H4.2zM20 7.4l-7.4 5.5a1 1 0 0 1-1.2 0L4 7.4V18h16V7.4z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="bg-alt">
+    <section id="summary" class="section section-alt" aria-label="Professional Summary">
       <div class="container">
         <div class="section-header">
-          <p class="section-eyebrow">About</p>
-          <h2 class="section-title">About Me</h2>
-        </div>
-        <div class="about-container">
-          <div class="about-image">
-            <img src="images/profile/profile.svg" alt="Portrait of Ramesh Kalathy" width="280" height="280" />
-          </div>
-          <div>
-            <div class="about-text">
-              <p>
-                Technical professional with an extensive portfolio spanning over 25 years, encompassing project
-                management, database development, data warehousing, business intelligence, and cloud architecture.
-                As Manager, Data Services at Databricks India, I help customers accelerate innovation through
-                Data + AI transformation powered by Delta Lake and modern Data Intelligence architectures.
-              </p>
-              <p>
-                I have led the design and delivery of enterprise-scale, multi-agent AI frameworks — including for
-                one of Europe's largest electrical organizations — driving significant improvements in efficiency,
-                accuracy, and time-to-value. I have also architected agentic recruiting automation platforms and
-                bring a proven track record of building, mentoring, and leading high-performing Data & AI teams to
-                deliver business-critical outcomes.
-              </p>
-              <p>
-                I approach problems with a blend of systems thinking and strategic thinking — zooming out to see
-                how a solution fits the broader business, then zooming in to get the architecture and execution
-                details right. I care deeply about servant leadership: building teams that grow stronger than the
-                sum of their parts.
-              </p>
-            </div>
-            <ul class="about-details">
-              <li><strong>Location:</strong> [City, Country]</li>
-              <li><strong>Experience:</strong> 25+ Years</li>
-              <li><strong>Focus:</strong> Data, Cloud &amp; AI Leadership</li>
-            </ul>
-            <div class="about-cta">
-              <a class="btn btn-primary" href="#contact">Let's Connect</a>
-              <a class="btn btn-secondary" href="[resume.pdf]" target="_blank" rel="noopener">Download Resume</a>
-            </div>
-            <ul class="about-socials">
-              <li><a href="[https://www.linkedin.com/in/ramesh-kalathy]" target="_blank" rel="noopener" aria-label="LinkedIn">in</a></li>
-              <li><a href="[https://github.com/rkalathy]" target="_blank" rel="noopener" aria-label="GitHub">gh</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Professional Summary -->
-    <section id="summary">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Summary</p>
           <h2 class="section-title">Professional Summary</h2>
         </div>
         <div class="summary-content">
           <p class="summary-text">
-            Data and AI leader with 25+ years of experience spanning software engineering, business intelligence,
-            cloud architecture, and enterprise AI transformation. Proven track record of leading complex,
-            multi-year programs across AWS, Azure, and Databricks, translating business strategy into scalable
-            data platforms and AI-driven solutions.
+            I bring deep, hands-on expertise in cloud-native development across
+            Databricks, AWS, and multi-cloud ecosystems, with a strong emphasis on
+            scalable data architectures, reliability, and access controls. Known for
+            customer obsession and a product-first mindset, I translate complex
+            business needs into actionable roadmaps and lead distributed teams to
+            deliver measurable impact across analytics, automation, and AI-driven
+            product initiatives.
           </p>
           <p class="summary-text">
-            Known for building and scaling high-performing Data & AI teams, driving cross-functional alignment
-            between engineering, product, and business stakeholders, and delivering measurable outcomes for
-            enterprise customers across industries.
+            I draw on a range of thinking styles — strategic, critical, systems,
+            expert, and creative — adapting my approach to the problem at hand rather
+            than defaulting to one comfortable mode. In practice, this means combining
+            analytical rigor with big-picture vision and a human-centric approach,
+            blending servant, transformational, and democratic leadership styles to
+            bring out the best in the teams I lead.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Experience -->
-    <section id="experience" class="bg-alt">
+    <section id="skills" class="section skills" aria-label="Skills">
       <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Career</p>
-          <h2 class="section-title">Experience</h2>
-          <p class="section-subtitle experience-intro-text">
-            A 25+ year journey from software engineering to Data & AI leadership, spanning enterprise consulting,
-            cloud architecture, and AI transformation delivery.
+        <div class="skills-intro">
+          <p class="skills-eyebrow">What I Bring</p>
+          <h2 class="section-title">Skills &amp; Expertise</h2>
+          <p class="skills-intro-text">
+            [One or two sentence overview of your technical breadth, AI/ML focus,
+            and leadership capability.]
           </p>
+
+          <div class="skills-cta">
+            <a href="#projects" class="btn btn-primary">See It In Action</a>
+            <a href="#contact" class="btn btn-outline">Let's Connect</a>
+          </div>
+
+          <ul class="skills-socials" aria-label="Social media links">
+            <li>
+              <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.02 2 2 0 0 1 4 .02zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:you@example.com" aria-label="Send an email">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 5.8 7.8-5.8H4.2zM20 7.4l-7.4 5.5a1 1 0 0 1-1.2 0L4 7.4V18h16V7.4z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul id="experience-timeline" class="timeline" aria-label="Work experience timeline">
-          <!-- Rendered from data/experience.json by renderCards.js -->
-        </ul>
-        <div class="experience-cta">
-          <a class="btn btn-secondary" href="[resume.pdf]" target="_blank" rel="noopener">View Full Resume</a>
+
+        <div class="skills-groups">
+          <div class="skills-group" id="technical-skills">
+            <h3 class="skills-group-title">Technical Skills</h3>
+            <ul class="skill-tag-list" data-skills-group="technical" aria-label="Technical skills">
+              <!-- Rendered from data/skills.json by renderCards.js -->
+            </ul>
+          </div>
+
+          <div class="skills-group" id="ai-skills">
+            <h3 class="skills-group-title">AI Skills</h3>
+            <ul class="skill-tag-list" data-skills-group="ai" aria-label="AI skills">
+              <!-- Rendered from data/skills.json by renderCards.js -->
+            </ul>
+          </div>
+
+          <div class="skills-group" id="leadership-skills">
+            <h3 class="skills-group-title">Leadership Skills</h3>
+            <ul class="skill-tag-list" data-skills-group="leadership" aria-label="Leadership skills">
+              <!-- Rendered from data/skills.json by renderCards.js -->
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills">
+    <section id="projects" class="section section-alt" aria-label="Featured Projects">
       <div class="container">
         <div class="section-header">
-          <p class="section-eyebrow">Expertise</p>
-          <h2 class="section-title">Technical Skills</h2>
-        </div>
-        <div id="skills-groups" class="skills-groups">
-          <!-- Rendered from data/skills.json by renderCards.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="bg-alt">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Portfolio</p>
           <h2 class="section-title">Featured Projects</h2>
-          <p class="section-subtitle">A selection of Data, Cloud, and AI initiatives I've led across enterprise platforms.</p>
         </div>
-        <div id="projects-grid" class="projects-grid">
+        <div class="grid grid-auto" id="projects-grid">
           <!-- Rendered from data/projects.json by renderCards.js -->
         </div>
       </div>
     </section>
 
-    <!-- Certifications -->
-    <section id="certifications">
+    <section id="certifications" class="section" aria-label="Certifications">
       <div class="container">
         <div class="section-header">
-          <p class="section-eyebrow">Credentials</p>
           <h2 class="section-title">Certifications</h2>
         </div>
-        <div id="certifications-grid" class="certifications-grid">
+        <div class="grid grid-auto" id="certifications-grid">
           <!-- Rendered from data/certifications.json by renderCards.js -->
         </div>
       </div>
     </section>
 
-    <!-- Education -->
-    <section id="education" class="bg-alt">
+    <section id="experience" class="section section-alt experience" aria-label="Work Experience Timeline">
       <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Background</p>
-          <h2 class="section-title">Education</h2>
+        <div class="experience-intro">
+          <p class="experience-eyebrow">Career Journey</p>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="experience-intro-text">
+            Over 25+ years, my career has progressed from hands-on data engineering to
+            leading enterprise-scale Data + AI transformation programs — building teams,
+            platforms, and delivery practices along the way.
+          </p>
+
+          <div class="experience-cta">
+            <a href="resume/resume.pdf" class="btn btn-primary" download>Download Resume</a>
+            <a href="#certifications" class="btn btn-outline">View Certifications</a>
+          </div>
+
+          <ul class="experience-socials" aria-label="Social media links">
+            <li>
+              <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.02 2 2 0 0 1 4 .02zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:you@example.com" aria-label="Send an email">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 5.8 7.8-5.8H4.2zM20 7.4l-7.4 5.5a1 1 0 0 1-1.2 0L4 7.4V18h16V7.4z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul id="education-timeline" class="timeline" aria-label="Education timeline">
-          <!-- Rendered from data/education.json by renderCards.js -->
-        </ul>
+
+        <div class="timeline" id="experience-timeline" aria-live="polite">
+          <!-- Rendered from data/experience.json by renderCards.js -->
+        </div>
       </div>
     </section>
 
-    <!-- Achievements -->
-    <section id="achievements">
+    <section id="education" class="section" aria-label="Education">
       <div class="container">
         <div class="section-header">
-          <p class="section-eyebrow">Recognition</p>
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="timeline" id="education-timeline">
+          <!-- Rendered from data/education.json by renderCards.js -->
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section section-alt" aria-label="Achievements">
+      <div class="container">
+        <div class="section-header">
           <h2 class="section-title">Achievements</h2>
         </div>
-        <div id="achievements-grid" class="achievements-grid">
+        <div class="grid grid-auto" id="achievements-grid">
           <!-- Rendered from data/achievements.json by renderCards.js -->
         </div>
       </div>
     </section>
 
-    <!-- Blog -->
-    <section id="blog" class="bg-alt">
+    <section id="blog" class="section" aria-label="Blog and Articles">
       <div class="container">
         <div class="section-header">
-          <p class="section-eyebrow">Writing</p>
-          <h2 class="section-title">Latest Articles</h2>
+          <h2 class="section-title">Blog / Articles</h2>
+          <p class="section-subtitle">
+            Writing on leadership, Generative AI, and software development.
+          </p>
         </div>
-        <div id="blog-grid" class="blog-grid">
+        <div class="grid grid-auto" id="blog-grid">
           <!-- Rendered from data/blog.json by renderCards.js -->
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section section-alt" aria-label="Contact">
       <div class="container">
         <div class="section-header">
-          <p class="section-eyebrow">Get in Touch</p>
           <h2 class="section-title">Contact</h2>
-          <p class="section-subtitle">Open to conversations on Data & AI strategy, leadership roles, and collaboration.</p>
+          <p class="section-subtitle">
+            Open to conversations on Data + AI transformation, speaking opportunities,
+            and mentoring. Reach out through any of the channels below.
+          </p>
         </div>
+
         <div class="contact-grid">
-          <div class="contact-card">
-            <span class="contact-card-icon" aria-hidden="true">@</span>
+          <a class="card contact-card" href="mailto:you@example.com">
+            <span class="contact-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" focusable="false">
+                <path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 5.8 7.8-5.8H4.2zM20 7.4l-7.4 5.5a1 1 0 0 1-1.2 0L4 7.4V18h16V7.4z"/>
+              </svg>
+            </span>
             <span class="contact-card-label">Email</span>
-            <span class="contact-card-value">[ramesh.kalathy@example.com]</span>
-          </div>
-          <div class="contact-card">
-            <span class="contact-card-icon" aria-hidden="true">#</span>
+            <span class="contact-card-value">you@example.com</span>
+          </a>
+
+          <a class="card contact-card" href="tel:+10000000000">
+            <span class="contact-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" focusable="false">
+                <path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/>
+              </svg>
+            </span>
             <span class="contact-card-label">Phone</span>
-            <span class="contact-card-value">[+91 00000 00000]</span>
-          </div>
-          <div class="contact-card">
-            <span class="contact-card-icon" aria-hidden="true">*</span>
+            <span class="contact-card-value">[+00 00000 00000]</span>
+          </a>
+
+          <div class="card contact-card">
+            <span class="contact-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" focusable="false">
+                <path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/>
+              </svg>
+            </span>
             <span class="contact-card-label">Location</span>
             <span class="contact-card-value">[City, Country]</span>
           </div>
         </div>
-        <ul class="contact-socials">
-          <li><a href="[https://www.linkedin.com/in/ramesh-kalathy]" target="_blank" rel="noopener" aria-label="LinkedIn">in</a></li>
-          <li><a href="[https://github.com/rkalathy]" target="_blank" rel="noopener" aria-label="GitHub">gh</a></li>
+
+        <ul class="contact-socials" aria-label="Social media links">
+          <li>
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.02 2 2 0 0 1 4 .02zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:you@example.com" aria-label="Send an email">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 5.8 7.8-5.8H4.2zM20 7.4l-7.4 5.5a1 1 0 0 1-1.2 0L4 7.4V18h16V7.4z"/>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer id="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <a class="nav-logo" href="#top">Ramesh Kalathy</a>
-        <p>Data & AI leader helping enterprises accelerate innovation through Data + AI transformation.</p>
+        <a href="#hero" class="logo">Ramesh Kalathy</a>
+        <p>Data &amp; AI leader with 25+ years of experience across cloud, AI, and enterprise data platforms.</p>
       </div>
-      <ul class="footer-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <ul class="footer-socials" aria-label="Social media links">
+        <li>
+          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.02 2 2 0 0 1 4 .02zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/>
+            </svg>
+          </a>
+        </li>
       </ul>
-      <ul class="footer-socials">
-        <li><a href="[https://www.linkedin.com/in/ramesh-kalathy]" target="_blank" rel="noopener" aria-label="LinkedIn">in</a></li>
-        <li><a href="[https://github.com/rkalathy]" target="_blank" rel="noopener" aria-label="GitHub">gh</a></li>
-      </ul>
-      <p class="footer-copyright">&copy; <span id="footer-year"></span> Ramesh Kalathy. All rights reserved.</p>
+
+      <p class="footer-copyright">&copy; <span id="footer-year">2026</span> Ramesh Kalathy. All rights reserved.</p>
     </div>
   </footer>
 

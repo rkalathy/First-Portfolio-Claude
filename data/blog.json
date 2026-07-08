@@ -1,20 +1,20 @@
 [
   {
-    "title": "[Building Multi-Agent AI Frameworks for the Enterprise]",
-    "date": "[2025-02]",
-    "excerpt": "[Lessons learned architecting and delivering multi-agent AI systems at enterprise scale, from design patterns to production readiness.]",
-    "url": "[https://example.com/blog/multi-agent-ai]"
+    "title": "Why Data Lakehouses Are Eating the Data Warehouse",
+    "excerpt": "A practitioner's take on when a lakehouse architecture actually pays off — and the migration mistakes that quietly kill the business case.",
+    "date": "[YYYY-MM]",
+    "url": "[link to article]"
   },
   {
-    "title": "[Modern Data Intelligence: Delta Lake and Beyond]",
-    "date": "[2024-10]",
-    "excerpt": "[A practitioner's view on how Delta Lake and Data Intelligence architectures are reshaping enterprise data platforms.]",
-    "url": "[https://example.com/blog/data-intelligence]"
+    "title": "Leading AI Teams Through Ambiguity",
+    "excerpt": "Notes on building and mentoring high-performing Data & AI teams when the roadmap changes every quarter — and why servant leadership matters more than ever.",
+    "date": "[YYYY-MM]",
+    "url": "[link to article]"
   },
   {
-    "title": "[Leading Data & AI Teams Through Transformation]",
-    "date": "[2024-05]",
-    "excerpt": "[Reflections on building and mentoring high-performing Data & AI teams while navigating large-scale transformation programs.]",
-    "url": "[https://example.com/blog/leading-data-ai-teams]"
+    "title": "What 'Vibe Coding' Taught Me About Engineering Leadership",
+    "excerpt": "Building small AI-assisted side projects turned out to be a surprisingly good way to stay sharp on the fundamentals I usually delegate as a leader.",
+    "date": "[YYYY-MM]",
+    "url": "[link to article]"
   }
 ]

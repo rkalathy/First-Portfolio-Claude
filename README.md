@@ -1,46 +1,57 @@
-# First Portfolio — Claude
+# Ramesh Kalathy — Portfolio Website
 
-A static personal portfolio site for **Ramesh Kalathy**, Data & AI leader. Built with plain
-HTML, CSS, and vanilla JavaScript — no framework, no build step, no dependencies.
+A modern, minimalistic, high-performance static portfolio built with plain HTML5, CSS3, and
+vanilla JavaScript, hosted on GitHub Pages. See [CLAUDE.md](CLAUDE.md) for the full project
+brief and [docs/architecture.md](docs/architecture.md) for structure decisions.
 
-**Live site:** https://rkalathy.github.io/First-Portfolio-Claude/
-
-## Features
-
-- Single-page layout: About, Professional Summary, Experience, Skills, Projects,
-  Certifications, Education, Achievements, Blog, and Contact
-- Content driven entirely by JSON files in [`data/`](data/) — update a JSON file to
-  update the site, no HTML edits needed
-- Responsive design with a mobile nav toggle (breakpoints at 1024px, 640px, 420px)
-- Accessible: skip link, semantic landmarks, `aria-expanded` nav state
-- Defensive rendering — each section fetches its own JSON and fails gracefully on
-  its own if that fetch ever breaks, instead of taking down the whole page
-
-## Project structure
+## Folder structure
 
 ```
-index.html              Single-page markup, one <section> per topic
-data/                    Content as JSON (experience, skills, projects, etc.)
-scripts/
-  main.js                Entry point
-  modules/
-    renderCards.js        Fetches data/*.json and renders each section
-    nav.js                 Mobile nav toggle
-    footer.js               Sets the copyright year
-styles/
-  base.css                Design tokens, reset, typography, buttons
-  layout.css               Header, hero, about, experience timeline, skills
-  cards.css                 Project/certification/achievement/blog cards
-  summary.css                Professional summary section
-  contact.css                  Contact section
-  footer.css                     Footer
-  responsive.css                  Breakpoints
-images/                  Profile avatar (generated SVG) and project badge icons
+/
+├── index.html              # Single-page site: all sections, SEO meta, links styles/scripts
+├── styles/
+│   ├── variables.css       # Design tokens: colors, spacing, typography, dark-mode vars
+│   ├── base.css            # Reset + base element styles + accessibility defaults
+│   ├── layout.css          # .container, .section, grid helpers
+│   ├── navigation.css      # Header / nav / mobile menu
+│   ├── hero.css            # Hero section
+│   ├── cards.css           # .card base + project/cert/achievement variants, .skill-tag
+│   ├── buttons.css         # .btn, .btn-primary, .btn-outline
+│   ├── footer.css          # Footer + social icons
+│   └── responsive.css      # Tablet / mobile media queries
+├── scripts/
+│   ├── main.js              # Entry point (ES module), wires up the modules below
+│   └── modules/
+│       ├── navigation.js    # Mobile menu + smooth scroll
+│       ├── scrollSpy.js      # Active nav-link highlighting
+│       ├── lazyLoad.js       # IntersectionObserver image lazy-loading
+│       ├── renderCards.js    # Renders data/*.json into card markup
+│       └── utils.js          # Shared helpers (e.g. fetchJSON), no DOM logic
+├── data/                    # JSON content consumed by renderCards.js
+│   ├── projects.json
+│   ├── skills.json
+│   ├── certifications.json
+│   ├── experience.json
+│   ├── education.json
+│   └── achievements.json
+├── images/
+│   ├── profile/             # Headshot, OG image
+│   ├── projects/            # Project screenshots
+│   └── icons/                # Favicon, badges, social icons
+├── assets/
+│   └── fonts/                 # Only used if self-hosting fonts instead of Google Fonts CDN
+├── resume/                   # Downloadable resume (PDF)
+├── docs/                     # Architecture notes, content-writing guidelines
+├── temp/                     # Scratch/drafts — git-ignored, never linked from index.html
+├── robots.txt
+├── sitemap.xml
+├── .nojekyll                 # Tells GitHub Pages to skip Jekyll processing
+└── .gitignore
 ```
 
-## Running locally
+## Local development
 
-No build tools required — just serve the folder statically:
+No build step required. Serve the folder with any static server, e.g.:
 
 ```bash
 python3 -m http.server 8000
@@ -48,20 +59,17 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000`.
 
-## Updating content
+## Deployment (GitHub Pages)
 
-Edit the relevant file in [`data/`](data/) (e.g. `data/projects.json` for a new
-project) and refresh the page — no rebuild step needed.
+1. Push this repository to GitHub.
+2. In the repo settings, open **Pages**.
+3. Set **Source** to the `main` branch, root (`/`) folder.
+4. Save — GitHub publishes to `https://<username>.github.io/<repo>/` (or
+   `https://<username>.github.io/` if the repo is named `<username>.github.io`).
+5. Update `index.html`'s canonical/OG URLs, `robots.txt`, and `sitemap.xml` with the final URL.
+6. Optional: add a custom domain via a `CNAME` file at the repo root and configure DNS.
 
-Some fields are still placeholders, wrapped in `[brackets]` (phone, location,
-social links, older employer/certification details). Find them all with:
+## Status
 
-```bash
-grep -rn "\[" data/ index.html
-```
-
-## Deployment
-
-Deployed automatically via GitHub Pages from the `main` branch whenever changes
-are pushed. See [`CLAUDE.md`](CLAUDE.md) for full architecture notes and
-guidance on making changes.
+Folder structure and skeleton scaffolding only — section content is built incrementally,
+one section at a time, per the workflow in `CLAUDE.md`.

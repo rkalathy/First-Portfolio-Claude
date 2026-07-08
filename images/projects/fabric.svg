@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="340" height="191" viewBox="0 0 340 191" role="img" aria-label="FABRIC project badge">
-  <rect width="340" height="191" fill="" />
-  <text x="170" y="103" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">FABRIC</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="191" viewBox="0 0 340 191" role="img" aria-label="MS Fabric">
+  <rect width="340" height="191" fill="#123a6e" />
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central"
+    font-family="Inter, Poppins, Roboto, -apple-system, BlinkMacSystemFont, sans-serif"
+    font-size="28" font-weight="700" fill="#ffffff" letter-spacing="0.5">MS Fabric</text>
 </svg>

@@ -1,73 +1,73 @@
 [
   {
-    "title": "Enterprise Data Lake Modernization",
-    "description": "Designed and led the build-out of a cloud-native data lake architecture consolidating fragmented enterprise data sources into a governed, scalable single source of truth using Delta Lake principles.",
+    "title": "Enterprise Data Lakehouse Migration",
+    "description": "Led the design and migration of a legacy on-prem data warehouse to a cloud-native data lakehouse, unifying batch and streaming data for [N] business units. Introduced a medallion (bronze/silver/gold) architecture that cut data-availability latency from days to hours.",
     "image": "images/projects/datalake.svg",
-    "tags": ["Data Lake", "Delta Lake", "Data Governance", "Architecture"],
+    "tags": ["Data Lake", "Delta Lake", "Lakehouse", "ETL"],
     "demoUrl": "",
     "repoUrl": ""
   },
   {
-    "title": "DevOps & CI/CD Transformation",
-    "description": "Established automated CI/CD pipelines and infrastructure-as-code practices across data engineering teams, cutting deployment time and reducing production incidents.",
+    "title": "CI/CD for Data & ML Pipelines",
+    "description": "Designed and rolled out CI/CD pipelines for data engineering and ML workloads, automating testing, deployment, and rollback across [N] environments. Reduced pipeline deployment time from hours to under [XX] minutes.",
     "image": "images/projects/devops.svg",
-    "tags": ["DevOps", "CI/CD", "Automation", "SRE"],
+    "tags": ["DevOps", "CI/CD", "Infrastructure as Code", "Chef"],
     "demoUrl": "",
     "repoUrl": ""
   },
   {
-    "title": "Multi-Agent AI Delivery Framework",
-    "description": "Architected and delivered an enterprise-scale multi-agent AI framework on Databricks for one of Europe's largest electrical organizations, improving efficiency, accuracy, and time-to-value.",
+    "title": "Multi-Agent AI Automation Framework",
+    "description": "Architected an enterprise-scale, multi-agent AI framework on Databricks for one of Europe's largest electrical organizations, orchestrating specialized agents across the delivery workflow and driving measurable gains in efficiency, accuracy, and time-to-value.",
     "image": "images/projects/databricks.svg",
-    "tags": ["Databricks", "Multi-Agent AI", "Delta Lake", "Enterprise AI"],
+    "tags": ["Databricks", "Multi-Agent AI", "Delta Lake", "GenAI"],
     "demoUrl": "",
     "repoUrl": ""
   },
   {
-    "title": "Pentaho ETL Platform Rollout",
-    "description": "Led the design and implementation of Pentaho-based ETL pipelines to automate ingestion and transformation for enterprise business intelligence reporting.",
+    "title": "Enterprise BI & Reporting Modernization",
+    "description": "Modernized a legacy reporting stack by building [N]+ automated dashboards and ETL workflows in Pentaho, replacing manual spreadsheet-based reporting and cutting monthly reporting turnaround from days to hours.",
     "image": "images/projects/pentaho.svg",
-    "tags": ["Pentaho", "ETL", "Business Intelligence"],
+    "tags": ["Pentaho", "ETL", "Business Intelligence", "Reporting"],
     "demoUrl": "",
     "repoUrl": ""
   },
   {
-    "title": "Microsoft Fabric Analytics Adoption",
-    "description": "Guided enterprise adoption of Microsoft Fabric to unify data engineering, data warehousing, and analytics workloads on a single SaaS platform.",
+    "title": "Unified Analytics Platform on Microsoft Fabric",
+    "description": "Led adoption of Microsoft Fabric as a unified analytics platform, consolidating data engineering, warehousing, and BI into a single governed environment and reducing tool sprawl for the analytics team.",
     "image": "images/projects/fabric.svg",
-    "tags": ["Microsoft Fabric", "Analytics", "Cloud"],
+    "tags": ["Microsoft Fabric", "Data Warehousing", "Power BI", "Governance"],
     "demoUrl": "",
     "repoUrl": ""
   },
   {
-    "title": "Dremio Self-Service Query Layer",
-    "description": "Implemented a Dremio-based semantic and query acceleration layer, enabling self-service analytics directly over the data lake without costly data duplication.",
+    "title": "Self-Service Analytics with Dremio",
+    "description": "Deployed Dremio as a semantic and query layer over the data lake, enabling business analysts to run self-service SQL queries without moving data — cutting ad hoc data-request turnaround from days to minutes.",
     "image": "images/projects/dremio.svg",
-    "tags": ["Dremio", "Data Virtualization", "Self-Service Analytics"],
+    "tags": ["Dremio", "Data Virtualization", "SQL", "Self-Service Analytics"],
     "demoUrl": "",
     "repoUrl": ""
   },
   {
-    "title": "Reltio Master Data Management Program",
-    "description": "Directed a Reltio MDM implementation to unify customer and product master data across business units, improving data accuracy and downstream reporting reliability.",
+    "title": "Master Data Management Rollout",
+    "description": "Led rollout of a Master Data Management program on Reltio, unifying customer records across [N] source systems, improving match accuracy to [XX]%, and establishing data-stewardship workflows adopted org-wide.",
     "image": "images/projects/reltio.svg",
-    "tags": ["Reltio", "MDM", "Data Quality"],
+    "tags": ["Reltio", "MDM", "Data Quality", "Data Governance"],
     "demoUrl": "",
     "repoUrl": ""
   },
   {
-    "title": "AWS Cloud Data Platform Migration",
-    "description": "Led migration of on-premises data warehousing workloads to AWS, leveraging managed services to improve scalability and reduce total cost of ownership.",
+    "title": "Cloud Migration & Cost Optimization on AWS",
+    "description": "Directed migration of on-prem workloads to AWS, redesigning data pipelines around S3, Glue, and Redshift, and reducing annual infrastructure spend by [XX]% through rightsizing and reserved-capacity planning.",
     "image": "images/projects/aws.svg",
-    "tags": ["AWS", "Cloud Migration", "Data Platform"],
+    "tags": ["AWS", "Cloud Migration", "Redshift", "Cost Optimization"],
     "demoUrl": "",
     "repoUrl": ""
   },
   {
-    "title": "Azure Cloud Data & Analytics Modernization",
-    "description": "Architected a modern Azure-based data and analytics stack, integrating Azure Data Factory, Synapse, and Power BI to support enterprise-wide reporting needs.",
+    "title": "Enterprise Data Platform on Azure",
+    "description": "Architected an enterprise data platform on Azure using Data Factory, Synapse, and Azure Data Lake Storage, supporting [N] downstream analytics and reporting use cases with role-based access controls aligned to enterprise security policy.",
     "image": "images/projects/azure.svg",
-    "tags": ["Azure", "Data Engineering", "Power BI"],
+    "tags": ["Azure", "Synapse", "Data Factory", "Cloud Architecture"],
     "demoUrl": "",
     "repoUrl": ""
   }

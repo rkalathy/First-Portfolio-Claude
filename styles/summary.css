@@ -1,15 +1,16 @@
 /* ==========================================================================
-   Professional Summary
+   Professional Summary — synthesis paragraphs styles
    ========================================================================== */
 
 .summary-content {
-  max-width: 820px;
+  max-width: 720px;
   margin-inline: auto;
-  display: grid;
-  gap: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
 }
 
 .summary-text {
-  font-size: 1.05rem;
   color: var(--color-text);
+  font-size: 1.05rem;
 }

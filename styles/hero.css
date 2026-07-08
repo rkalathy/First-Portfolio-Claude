@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Hero — landing section styles
+   ========================================================================== */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-block: var(--space-xl);
+}
+
+.hero-container {
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 640px;
+}
+
+.hero-eyebrow {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  margin-bottom: var(--space-xs);
+}
+
+.hero-name {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  margin-bottom: var(--space-xs);
+}
+
+.hero-title {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: var(--color-text-muted);
+  font-weight: 500;
+  margin-bottom: var(--space-md);
+}
+
+.hero-tagline {
+  font-size: 1.05rem;
+  max-width: 55ch;
+  margin-bottom: var(--space-lg);
+}
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.hero-socials {
+  display: flex;
+  gap: var(--space-sm);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  transition: background-color var(--transition-fast), color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.hero-socials a:hover,
+.hero-socials a:focus-visible {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: var(--space-md);
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-text-muted);
+}
+
+.hero-scroll-indicator:hover,
+.hero-scroll-indicator:focus-visible {
+  color: var(--color-primary);
+}

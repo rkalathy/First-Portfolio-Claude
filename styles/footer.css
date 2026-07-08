@@ -1,8 +1,8 @@
 /* ==========================================================================
-   Footer
+   Footer — site footer, social links
    ========================================================================== */
 
-.site-footer {
+#site-footer {
   background-color: var(--color-bg-alt);
   border-top: 1px solid var(--color-border);
   padding-block: var(--space-lg);
@@ -10,33 +10,26 @@
 
 .footer-inner {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
-  gap: var(--space-lg);
-  align-items: start;
-}
-
-.footer-brand .nav-logo {
-  display: inline-block;
-  margin-bottom: var(--space-xs);
+  grid-template-columns: 1.4fr 1fr auto;
+  align-items: center;
+  gap: var(--space-md);
 }
 
 .footer-brand p {
-  color: var(--color-text-muted);
-  max-width: 320px;
+  margin: var(--space-xs) 0 0;
   font-size: 0.9rem;
+  max-width: 40ch;
 }
 
 .footer-links {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  list-style: none;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
 }
 
 .footer-links a {
   color: var(--color-text-muted);
   font-size: 0.9rem;
-  transition: color var(--transition-fast);
 }
 
 .footer-links a:hover,
@@ -48,18 +41,22 @@
   display: flex;
   gap: var(--space-sm);
   list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-end;
 }
 
 .footer-socials a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   border: 1px solid var(--color-border);
   color: var(--color-text-muted);
-  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+  transition: background-color var(--transition-fast), color var(--transition-fast),
+    border-color var(--transition-fast);
 }
 
 .footer-socials a:hover,
@@ -71,10 +68,9 @@
 
 .footer-copyright {
   grid-column: 1 / -1;
-  margin-top: var(--space-lg);
+  margin: var(--space-md) 0 0;
   padding-top: var(--space-md);
   border-top: 1px solid var(--color-border);
+  font-size: 0.82rem;
   text-align: center;
-  font-size: 0.85rem;
-  color: var(--color-text-muted);
 }

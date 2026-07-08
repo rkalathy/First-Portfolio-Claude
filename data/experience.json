@@ -5,10 +5,10 @@
     "startDate": "2022-06",
     "endDate": "Present",
     "highlights": [
-      "Lead the design and delivery of enterprise-scale, multi-agent AI frameworks, including for one of Europe's largest electrical organizations, driving measurable improvements in efficiency, accuracy, and time-to-value.",
-      "Architect agentic recruiting automation platforms built on Delta Lake and modern Data Intelligence architectures.",
-      "Build, mentor, and lead high-performing Data & AI teams delivering business-critical outcomes for global enterprise customers.",
-      "Partner with customers on Data + AI transformation strategy, accelerating adoption of the Databricks Data Intelligence Platform."
+      "Lead design and delivery of enterprise-scale, multi-agent AI automation frameworks for global customers, including a program for one of Europe's largest electrical organizations that improved delivery efficiency and time-to-value by [XX]%.",
+      "Architected agentic recruiting automation platforms spanning candidate sourcing, screening, and interview scheduling, cutting manual recruiter effort by an estimated [XX]%.",
+      "Build and mentor a team of [N] data and AI engineers, embedding Delta Lake and Data Intelligence best practices into customer delivery.",
+      "Own delivery governance across [N]+ concurrent Data + AI transformation engagements, translating business requirements into actionable technical roadmaps."
     ]
   },
   {
@@ -17,9 +17,10 @@
     "startDate": "2018-04",
     "endDate": "2022-05",
     "highlights": [
-      "Directed large-scale cloud data engineering programs across AWS and Azure for enterprise clients.",
-      "Established DevOps and CI/CD practices that reduced release cycle time by [XX]%.",
-      "Led cross-functional teams delivering data platform modernization for [N] enterprise customers."
+      "Directed cross-functional data platform programs spanning AWS and Azure, migrating legacy on-prem data warehouses to cloud-native lakehouse architectures for [N] business units.",
+      "Established data governance and access-control frameworks that reduced data-related security incidents by [XX]% while enabling self-service analytics.",
+      "Managed a distributed team of [N] engineers and analysts across [N] time zones, growing the team from [N] to [N] over four years.",
+      "Owned infrastructure and vendor cost management, reducing annual cloud spend by [XX]% through rightsizing and reserved-capacity planning."
     ]
   },
   {
@@ -28,9 +29,10 @@
     "startDate": "2013-01",
     "endDate": "2018-03",
     "highlights": [
-      "Architected enterprise data warehousing and business intelligence solutions supporting executive decision-making.",
-      "Designed data models and ETL pipelines processing large-scale operational datasets.",
-      "Introduced self-service analytics using Tableau and PowerBI, increasing report turnaround speed by [XX]%."
+      "Designed enterprise data architecture and integration patterns connecting Salesforce, ServiceNow, and Reltio MDM to downstream analytics platforms.",
+      "Led rollout of a Master Data Management program on Reltio, improving customer data match accuracy to [XX]%.",
+      "Partnered with business stakeholders to define data governance standards adopted across [N] departments.",
+      "Delivered [N]+ BI and reporting solutions using Pentaho and Tableau, cutting manual reporting effort by roughly [XX] hours per month."
     ]
   },
   {
@@ -39,9 +41,10 @@
     "startDate": "2006-06",
     "endDate": "2012-12",
     "highlights": [
-      "Led the BI and data warehousing function, delivering reporting and analytics for finance and operations teams.",
-      "Managed a team of developers and analysts building Oracle-based data warehouse solutions.",
-      "Standardized data modelling practices, improving data quality and consistency across reporting systems."
+      "Built and led the organization's first centralized data warehouse, consolidating data from [N] disparate source systems.",
+      "Introduced ETL standards and process/data-flow documentation using MS Visio, cutting onboarding time for new data engineers by [XX]%.",
+      "Managed a team of [N] BI developers and DBAs delivering Oracle-based reporting solutions for finance and operations.",
+      "Drove adoption of self-service dashboards, reducing ad hoc reporting requests to IT by [XX]%."
     ]
   },
   {
@@ -50,9 +53,10 @@
     "startDate": "1999-07",
     "endDate": "2006-05",
     "highlights": [
-      "Progressed from Software Engineer to Senior Developer building Oracle database and web applications.",
-      "Delivered application development projects for [N] clients across multiple industries.",
-      "Built foundational expertise in database development, application design, and project delivery."
+      "Developed and maintained Oracle database applications and reporting systems supporting core business operations.",
+      "Automated recurring data processing jobs, cutting manual processing time by roughly [XX] hours per week.",
+      "Collaborated with QA and business teams to translate requirements into application design specifications.",
+      "Progressed from Software Engineer to Senior Developer over six years, taking on increasing ownership of system design decisions."
     ]
   }
 ]

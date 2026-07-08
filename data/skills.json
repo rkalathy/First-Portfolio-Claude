@@ -3,7 +3,7 @@
     "Project Management",
     "Oracle Database Development",
     "Data Warehousing",
-    "Web Development",
+    "Web",
     "Chef",
     "Application Development",
     "Business Intelligence",
@@ -27,22 +27,17 @@
     "Salesforce CRM, CPQ, Service, Data Cloud, Agentforce",
     "Mulesoft",
     "Databricks",
-    "Reltio",
-    "Delta Lake",
-    "CI/CD Pipelines",
-    "Data Governance",
-    "Multi-Agent AI Frameworks"
+    "Reltio"
   ],
+  "ai": ["LLM Fine-tuning", "RAG", "Prompt Engineering", "MLOps"],
   "leadership": [
+    "Team Mentoring",
+    "Technical Strategy",
+    "Stakeholder Management",
     "Strategic Thinking",
     "Systems Thinking",
     "Servant Leadership",
     "Cross-Functional Leadership",
-    "Building & Scaling High-Performing Teams",
-    "Stakeholder Management",
-    "Program & Delivery Management",
-    "Mentoring & Coaching",
-    "Change Management",
-    "Executive Communication"
+    "Building & Scaling High-Performing Teams"
   ]
 }

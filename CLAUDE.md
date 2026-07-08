@@ -1,89 +1,357 @@
 # CLAUDE.md
 
-Guidance for Claude Code when working in this repository.
+# Project
 
-## What this is
+Personal Professional Portfolio Website
 
-A static HTML/CSS/vanilla-JS personal portfolio site for Ramesh Kalathy (Data & AI
-leader). No build step, no framework, no package.json — open `index.html` directly
-or serve the folder with any static file server.
+This repository contains my professional portfolio website hosted using GitHub Pages.
 
-Deployed via GitHub Pages from the `main` branch at:
-https://rkalathy.github.io/First-Portfolio-Claude/
+The goal is to create a modern, elegant, responsive, high-performance static website that highlights my experience, projects, technical expertise, leadership, certifications, and achievements.
 
-## Architecture
+The website should look professional enough to be shared with recruiters, customers, conference organizers, and potential employers.
 
-- `index.html` — single page, one `<section>` per content area (about, summary,
-  experience, skills, projects, certifications, education, achievements, blog,
-  contact). Sections that render from data have an empty container element with a
-  `<!-- Rendered from data/X.json by renderCards.js -->` comment marking where JS
-  injects content.
-- `data/*.json` — content lives here, not in HTML. Each file maps 1:1 to a render
-  function in `scripts/modules/renderCards.js` (e.g. `data/projects.json` →
-  `renderProjects()` → `#projects-grid`).
-- `scripts/modules/renderCards.js` — fetches each JSON file and renders it into its
-  container. Every render function wraps its fetch in try/catch and falls back to
-  a `.fetch-error` message on failure — never let a bad fetch break the rest of the
-  page.
-- `scripts/modules/nav.js` — mobile nav toggle (`.is-open` class, synced with
-  `aria-expanded`).
-- `scripts/modules/footer.js` — sets the copyright year in `#footer-year`.
-- `scripts/main.js` — entry point, wires the above into `DOMContentLoaded`.
-- `styles/` — one file per concern (`base.css` has design tokens in `:root`,
-  `layout.css`, `cards.css`, `summary.css`, `contact.css`, `footer.css`,
-  `responsive.css`). All colors/spacing/radii should reference the custom
-  properties in `base.css`, not hardcoded values.
-- `images/profile/profile.svg` — generated "RK" initials avatar (gradient
-  `#1a4d8f`→`#2e86de`). Not a photo. See "Content conventions" below before
-  changing this.
-- `images/projects/*.svg` — flat-color 340×191 badge images per project.
+---
 
-## Content conventions
+# Target Audience
 
-- **Bracketed placeholders**: unverifiable/real-world facts I can't confirm
-  (past employer names, certification names/dates, education institution,
-  phone, location, social media URLs, specific metrics like `[XX]%`) are wrapped
-  in `[...]`. Before treating the site as final, grep for these and replace with
-  real values:
-  ```
-  grep -rn "\[" data/ index.html
-  ```
-- **No fabricated photos**: do not generate a photorealistic "photo" of Ramesh.
-  This site represents a real, named person — use the initials-avatar SVG
-  approach (or a real photo the user supplies) instead of an AI-generated fake
-  face.
-- New JSON entries should always render safely even with special characters —
-  `renderCards.js` escapes all interpolated text via `escapeHTML()`. Don't
-  bypass it with raw `innerHTML` of untrusted content.
+- Recruiters
+- Hiring Managers
+- Customers
+- Conference Organizers
+- Students
+- Engineering Leaders
+- AI/Data Engineering Community
 
-## Making changes
+---
 
-- Content-only changes (new project, new blog post, updated skill) → edit the
-  relevant `data/*.json` file. No HTML/JS changes needed unless the shape of the
-  data changes.
-- New section → add a container `<div id="...">`/`<ul id="...">` in `index.html`,
-  a matching JSON file in `data/`, a render function + template function in
-  `renderCards.js`, call it from the exported `renderCards()`, and style it in
-  the appropriate `styles/*.css` file.
-- Responsive breakpoints used throughout: 1024px (tablet) and 640px (mobile), plus
-  a 420px fix in `responsive.css` for the nav logo at very small widths.
+# Design Goals
 
-## Verifying changes
+The website should be:
 
-There's no test suite. Verify manually:
-1. Serve locally, e.g. `python3 -m http.server 8000` from this directory.
-2. Load in a browser (or headless via Playwright) and confirm: zero console
-   errors, zero failed network requests, and that each data-driven section
-   renders the expected number of cards.
-3. Check both a wide viewport and ~375px mobile width for layout breaks,
-   especially around the nav toggle and card grids.
+- Clean
+- Minimalistic
+- Modern
+- Premium
+- Easy to navigate
+- Mobile responsive
+- Fast loading
+- Accessible
+- SEO friendly
 
-## Deployment
+Avoid flashy animations or clutter.
 
-This repo deploys via GitHub Pages (`main` branch, root). Pushing to `main`
-triggers a rebuild automatically — no CI config needed. To check build status:
-```
-gh api repos/rkalathy/First-Portfolio-Claude/pages --jq '.status'
-```
-The repo must stay **public** — GitHub Pages on private repos requires a paid
-plan and will silently fail to enable otherwise.
+Use whitespace effectively.
+
+Focus on readability.
+
+---
+
+# Tech Stack
+
+Use only:
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+
+Do NOT use:
+
+- React
+- Angular
+- Vue
+- Bootstrap
+- Tailwind
+- jQuery
+
+The website must be completely static and compatible with GitHub Pages.
+
+---
+
+# Folder Structure
+
+/
+│
+├── index.html
+├── styles/
+│     style.css
+│
+├── scripts/
+│     main.js
+│
+├── images/
+│
+├── assets/
+│
+├── docs/
+│
+├── resume/
+│
+├── temp/
+│
+└── README.md
+
+Keep folders organized.
+
+---
+
+# Website Sections
+
+The homepage should contain:
+
+1. Hero Section
+2. About Me
+3. Professional Summary
+4. Technical Skills
+5. AI Skills
+6. Leadership Skills
+7. Featured Projects
+8. Certifications
+9. Work Experience Timeline
+10. Education
+11. Achievements
+12. Blog / Articles (optional)
+13. Contact
+14. Footer
+
+Navigation should scroll smoothly to each section.
+
+---
+
+# Design Principles
+
+Use consistent spacing.
+
+Use reusable CSS classes.
+
+Keep typography consistent.
+
+Avoid inline CSS.
+
+Avoid inline JavaScript.
+
+Keep JavaScript modular.
+
+---
+
+# Color Theme
+
+Professional blue/white/gray theme.
+
+Support Light Mode.
+
+Design Dark Mode so it can be enabled later.
+
+Do not use excessive gradients.
+
+---
+
+# Typography
+
+Use Google Fonts.
+
+Preferred fonts:
+
+- Inter
+- Poppins
+- Roboto
+
+Maintain a clear visual hierarchy.
+
+---
+
+# Responsiveness
+
+Desktop
+
+Tablet
+
+Mobile
+
+All pages must be fully responsive.
+
+Use Flexbox and CSS Grid.
+
+Avoid fixed widths.
+
+---
+
+# Performance
+
+Optimize images.
+
+Lazy load images.
+
+Minimize JavaScript.
+
+Avoid unnecessary DOM manipulation.
+
+Keep Lighthouse scores above:
+
+Performance >95
+
+Accessibility >95
+
+SEO >95
+
+Best Practices >95
+
+---
+
+# Accessibility
+
+Use semantic HTML.
+
+Use aria labels where needed.
+
+Maintain proper heading hierarchy.
+
+Ensure sufficient color contrast.
+
+Support keyboard navigation.
+
+---
+
+# SEO
+
+Every page should include:
+
+- title
+- meta description
+- Open Graph tags
+- favicon
+- canonical URL
+
+Use semantic HTML.
+
+---
+
+# Coding Standards
+
+Use meaningful names.
+
+Keep functions small.
+
+Avoid duplicated code.
+
+Comment only when useful.
+
+Keep HTML clean.
+
+Prefer reusable CSS classes.
+
+---
+
+# JavaScript
+
+Keep JavaScript lightweight.
+
+Use ES6.
+
+Separate DOM logic from utility functions.
+
+Avoid global variables.
+
+---
+
+# CSS
+
+Organize CSS into sections.
+
+Example:
+
+Variables
+
+Global
+
+Layout
+
+Navigation
+
+Hero
+
+Cards
+
+Buttons
+
+Footer
+
+Media Queries
+
+Use CSS variables for colors.
+
+---
+
+# Images
+
+Store images under:
+
+/images
+
+Compress images before use.
+
+Use descriptive filenames.
+
+---
+
+# Git Workflow
+
+Commit after each completed section.
+
+Commit messages should be:
+
+Add hero section
+
+Improve responsive navigation
+
+Add certifications
+
+Optimize images
+
+Fix mobile layout
+
+Avoid large commits.
+
+---
+
+# Documentation
+
+Update README whenever a major feature is added.
+
+Document folder structure.
+
+Document deployment process.
+
+---
+
+# Response Style
+
+Before generating code:
+
+1. Analyze the request.
+2. Explain your approach.
+3. Suggest improvements if applicable.
+4. Wait for approval before making major structural changes.
+
+When generating code:
+
+- Produce production-quality code.
+- Explain complex logic briefly.
+- Preserve the existing project structure.
+- Never overwrite unrelated files.
+
+---
+
+# Preferred Workflow
+
+Always work in small iterations.
+
+One section at a time.
+
+After completing each section:
+
+- Review code quality.
+- Check responsiveness.
+- Check accessibility.
+- Suggest improvements before moving to the next section.
+
+Never generate the entire website in one response.

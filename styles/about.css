@@ -1,0 +1,79 @@
+/* ==========================================================================
+   About Me — introduction section styles
+   ========================================================================== */
+
+.about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: minmax(220px, 340px) 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+  width: 100%;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.about-eyebrow {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  margin-bottom: var(--space-xs);
+}
+
+.about-intro {
+  font-size: 1.05rem;
+  color: var(--color-text);
+}
+
+.about-details {
+  max-width: 60ch;
+}
+
+.about-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.about-socials {
+  display: flex;
+  gap: var(--space-sm);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  transition: background-color var(--transition-fast), color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.about-socials a:hover,
+.about-socials a:focus-visible {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}

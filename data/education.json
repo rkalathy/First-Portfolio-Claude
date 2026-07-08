@@ -1,14 +1,14 @@
 [
   {
-    "degree": "[Master's Degree in Computer Applications]",
+    "degree": "[Master's Degree in Computer Science / Information Systems]",
     "institution": "[University Name]",
-    "startDate": "1997",
-    "endDate": "1999"
+    "startYear": "1997",
+    "endYear": "1999"
   },
   {
-    "degree": "[Bachelor's Degree in Computer Science]",
+    "degree": "[Bachelor's Degree in Computer Science / Engineering]",
     "institution": "[University Name]",
-    "startDate": "1993",
-    "endDate": "1997"
+    "startYear": "1993",
+    "endYear": "1997"
   }
 ]

@@ -1,26 +1,30 @@
 [
   {
     "name": "[Databricks Certified Data Engineer Professional]",
-    "issuer": "[Databricks]",
-    "date": "[2023]",
-    "icon": "images/icons/cert-badge.svg"
+    "issuer": "Databricks",
+    "date": "[YYYY-MM]",
+    "credentialUrl": "",
+    "image": "images/icons/cert-badge.svg"
   },
   {
-    "name": "[AWS Certified Solutions Architect]",
-    "issuer": "[Amazon Web Services]",
-    "date": "[2020]",
-    "icon": "images/icons/cert-badge.svg"
+    "name": "[AWS Certified Solutions Architect – Associate]",
+    "issuer": "Amazon Web Services",
+    "date": "[YYYY-MM]",
+    "credentialUrl": "",
+    "image": "images/icons/cert-badge.svg"
   },
   {
     "name": "[Microsoft Certified: Azure Data Engineer Associate]",
-    "issuer": "[Microsoft]",
-    "date": "[2021]",
-    "icon": "images/icons/cert-badge.svg"
+    "issuer": "Microsoft",
+    "date": "[YYYY-MM]",
+    "credentialUrl": "",
+    "image": "images/icons/cert-badge.svg"
   },
   {
-    "name": "[Project Management Professional (PMP)]",
-    "issuer": "[Project Management Institute]",
-    "date": "[2015]",
-    "icon": "images/icons/cert-badge.svg"
+    "name": "[Salesforce Certified Administrator]",
+    "issuer": "Salesforce",
+    "date": "[YYYY-MM]",
+    "credentialUrl": "",
+    "image": "images/icons/cert-badge.svg"
   }
 ]
