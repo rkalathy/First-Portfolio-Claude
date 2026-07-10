@@ -61,4 +61,3 @@ python3 -m http.server 8000
 Or simply open `index.html` directly in a browser.
 
 Deployment is via GitHub Pages from this repository (canonical URL: `https://rkalathy.github.io/First-Portfolio-Claude/`).
-# First-Skills-Demo
